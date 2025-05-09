@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AuthService } from './services/auth.service';
-import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,9 +8,9 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   title = 'Depression';
  message = " you are in that state";
-  userlist: Array<any> = [];
+  userlist:  unknown;
  constructor(private auth: AuthService) { }
-  ngOnInit() {
+  onInit() : void {
     this.getuserslist();
   }
  getuserslist(){
