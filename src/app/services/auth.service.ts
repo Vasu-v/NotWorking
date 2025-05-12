@@ -48,7 +48,6 @@ export class AuthService {
 
        this.userSubject.next(data);
 console.log("User list updated", data);
-return data;
       })}
 
     

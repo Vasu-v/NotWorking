@@ -50,3 +50,4 @@ export class AppComponent {
   // );
 
 }}
+// Removed <router-outlet> from here as it belongs in the HTML template.
